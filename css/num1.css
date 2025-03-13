@@ -1,0 +1,55 @@
+body{
+    overflow-x: hidden;
+}
+
+#wrap{
+    width: 100%;
+    background: #e9e9e9;
+}
+
+.main_area{
+    width: 100%;
+    max-width: 1400px;
+    height: 1500px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.main_nav{
+    position: fixed;
+    left: 50%;
+    bottom: -100%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    z-index: 1000;
+}
+
+.mNav_box{
+    position: absolute;
+    left: 0;
+    top: -60px;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+    transition: top .3s;
+}
+
+.mNav_box.onSlide{
+    transition: none;
+}
+
+.mNav_dragArea{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #e9e9e9;
+}
+
+.mNav_inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
